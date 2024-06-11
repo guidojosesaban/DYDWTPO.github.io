@@ -1,0 +1,133 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  height: 6rem;
+  background: #232323;
+}
+
+#logotipo {
+  background: linear-gradient(to right, rgb(255, 0, 153), rgb(119, 0, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+}
+
+#mainNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.navItem {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.25rem .5rem;
+}
+
+.navItem:hover{
+    transform: scale(1.2);
+    transition: 250ms;
+}
+
+#menuBtn{
+    height: 2.6rem;
+    display: none;
+}
+
+#games {
+  border: 3px solid rgb(119, 0, 255);
+  border-radius: 8px;
+}
+
+#games:hover{
+    background:rgb(119, 0, 255) ;
+}
+
+#respNav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100vw;
+    left: 0rem;
+    top: 6rem;
+    background: #292929;
+    padding: 1rem 0rem;
+}
+
+.navItemResp{
+    padding: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.mainFooter{
+    min-height: 6rem;
+    background: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.mainFooter p{
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .mainHeader{
+        position: fixed;
+        width: 100vw;
+        top: 0rem;
+        z-index: 2;
+        
+    }
+  
+    #mainNav {
+    display: none;
+  }
+
+  #menuBtn{
+    display: block;
+  }
+
+  .homeSection{
+    margin-top: 6rem;
+  }
+
+  .mainFooter p{
+    text-align: center;
+    padding: 2rem;
+  }
+
+
+
+}

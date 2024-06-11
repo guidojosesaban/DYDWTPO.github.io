@@ -1,0 +1,75 @@
+.homeSection {
+  width: 100vw;
+  height: 26rem;
+  background-image: url(/assets/img/background-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 1rem;
+  width: 60rem;
+  line-height: 3rem;
+  /* backdrop-filter: blur(5px);
+    background: #2323231a;
+    border-radius: 8px; */
+}
+
+.mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainInfoContainer {
+    margin: 3rem 0rem;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    border-radius: 21px;
+    background: #ffffff;
+    box-shadow:  12px 12px 22px #cfcfcf,
+                 -12px -12px 22px #ffffff;}
+
+#logoUade{
+    height: 6rem;
+    filter: drop-shadow(1px 1px 1px #232323);
+}
+
+.mainInfoContainer p{
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px #23232312;
+}
+
+.mainInfoContainer p span{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .mainInfoContainer{
+        width: 80vw;
+    }
+    .mainInfoContainer p{
+        font-size: 1.1rem;
+        text-shadow: 1px 1px 1px #23232312;
+    }
+
+}
